@@ -7,7 +7,9 @@ shinyUI(pageWithSidebar(
         selectInput('xcol', 'X Variable', names(mtcars),
                     selected=names(mtcars)[[2]]),
         numericInput('clusters', 'Cluster count', 3,
-                     min = 1, max = 9)
+                     min = 1, max = 9),
+        h3('Clusters Sizes'),
+        textOutput('clusters')
     ),
     mainPanel(
         plotOutput('plot1')

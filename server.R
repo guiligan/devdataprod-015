@@ -19,4 +19,6 @@ shinyServer(function(input, output, session) {
              pch = 20, cex = 3)
         points(clusters()$centers, pch = 4, cex = 4, lwd = 4)
     })
+    
+    output$clusters <- renderText({clusters()$size})
 })

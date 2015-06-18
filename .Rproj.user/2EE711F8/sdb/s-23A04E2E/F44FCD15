@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nshinyUI(pageWithSidebar(\n    headerPanel('Cars fuel consumption vs aspects of design k-means clustering'),\n    sidebarPanel(\n        span(\"Select between different cars design aspects and the number of\n             clusters to group according to fuel effiency.\"),\n        selectInput('xcol', 'X Variable', names(mtcars),\n                    selected=names(mtcars)[[2]]),\n        numericInput('clusters', 'Cluster count', 3,\n                     min = 1, max = 9)\n    ),\n    mainPanel(\n        plotOutput('plot1')\n    )\n))",
+    "created" : 1434635674833.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "773432678",
+    "id" : "F44FCD15",
+    "lastKnownWriteTime" : 1434636996,
+    "path" : "D:/Google Drive/Educacional/Coursera/Johns Hopkins Bloomberg School of Public Health/Developing Data Products/R/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
